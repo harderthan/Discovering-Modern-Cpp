@@ -39,11 +39,11 @@ int main(int argc, char **argv)
     phone_book.insert(pair<string, unsigned long>("김광회", 01034563456));
     phone_book.insert(pair<string, unsigned long>("홍길동", 01045674567));
 
-    findFromName(phone_book, "홍길동");
-    findFromName(phone_book, "쇽쇽쇽");
+    findFromName(phone_book, "홍길동"); // 존재하는 이름
+    findFromName(phone_book, "쇽쇽쇽"); // 존재하지 않는 이름
 
-    findFromPhoneNumber(phone_book, 01034563456);
-    findFromPhoneNumber(phone_book, 99999999999);
+    findFromPhoneNumber(phone_book, 01034563456); // 존재하는 번호
+    findFromPhoneNumber(phone_book, 99999999999); // 존재하지 않는 번호
 
     return 0;
 }
